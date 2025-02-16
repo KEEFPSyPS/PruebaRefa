@@ -9827,3 +9827,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
+/* espacio barra menu principal */
+.navbar-nav.gap-3 {
+  gap: 3rem; /* 1rem = 16px */
+}
