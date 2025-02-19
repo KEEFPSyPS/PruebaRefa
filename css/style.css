@@ -9565,11 +9565,11 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active 
 {
-  color: #E1141F;
+  color: #ffffff;
 }
 /* Cambia el color del texto "Inicio" al pasar el ratón sobre él */
 .nav-item.nav-link.active:hover {
-  color: red;
+  color: #ffffff;
 }
 
 
