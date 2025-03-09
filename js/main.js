@@ -135,9 +135,23 @@ $(document).ready(function()
 	});
 
 });
+// fin menú pegajoso
 
-// facturación
-document.getElementById('formularioFactura').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Factura generada con éxito!');
+
+document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('video');
+
+    videos.forEach(video => {
+        video.pause(); // Pausa el video inicialmente
+
+        video.addEventListener('mouseenter', () => {
+            video.muted = true; // Asegurar que está silenciado
+            video.play().catch(error => console.error("Error al reproducir el video:", error));
+        }); 
+
+        video.addEventListener('mouseleave', () => {
+            console.log('Mouse salió del video');
+            video.pause(); // Pausa el video al retirar el mouse
+        });
+    });
 });

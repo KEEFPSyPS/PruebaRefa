@@ -9836,3 +9836,34 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-nav.gap-3 {
   gap: 3rem; /* 1rem = 16px */
 }
+/* transicion video */
+video {
+  transition: opacity 0.5s ease-in-out;
+}
+
+video:hover {
+  opacity: 0.9;
+}
+
+.product-offer {
+  position: relative; /* Asegura que el texto se posicione dentro del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   /* Centra el texto */
+  text-align: center;
+  color: white; /* Asegura que el texto sea visible */
+  width: 100%;
+  pointer-events: none; /* Evita interferencia con el video */
+}
+
+.offer-text a {
+  pointer-events: auto; /* Permite interacción con el botón */
+}
+
